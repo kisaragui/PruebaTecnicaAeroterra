@@ -1,0 +1,60 @@
+/* ----------------------- mapa ----------------------------------*/
+
+#mapa { 
+	height: 457px;
+	width: 488px;
+	}
+
+/*  ------------------  etiquetas inputs ------------------------*/
+
+.input-field label.etiqueta {
+
+	color: #9e9d24;
+}
+
+.input-field input:focus + label {
+	color: #1b5e20 !important ;
+}
+
+h3 {
+	background-color: #1b5e20;
+	color: #00e676;
+}
+
+input:not(.browser-default):focus:not([readonly]) {
+	border-bottom: 1px solid #1b5e20 !important;
+    box-shadow: 0 1px 0 0 #1b5e20 !important;
+}
+
+
+/*-------------------- pagina ----------------------------*/
+
+
+body {
+  background-color: #f1f8e9;
+}
+
+.titulo > h3{
+	padding: 10px;
+	margin: 0;
+}
+
+/*----------------------informacion del punto -------------------------*/
+
+.leaflet-popup-content {
+	margin: 0px !important;
+	padding: 10px;
+}
+
+.informacion > p {
+	margin: 0px !important;
+}
+
+.informacion > p > b {
+	color: #9e9d24;
+
+}
+
+
+
+

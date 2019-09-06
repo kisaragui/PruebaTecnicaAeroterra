@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">  
+  <head>    
+    <title>Demo: mapa ArcGIS API</title>    
+    <meta charset="UTF-8">
+      <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+  </head>  
+  <body>
+     <div class="titulo center"><h3>Punto de interés</h2></div>
+      <br>  
+    <div class="container">
+    <div class="row">
+      <div class="col s6">
+        <div id="error" class="alerta"><div>
+          <form class="col s12"  action="#">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="descripcion" type="text" placeholder="AEROTERRA S.A.">
+                <label  class="etiqueta" for="descripcion">Descripción</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="direccion" type="text" placeholder="Av. Eduardo Madero 1020, C1001 CABA">
+                <label class="etiqueta"  for="direccion">Dirección</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="telefono" type="tel" placeholder="54 9 11 5272 0900">
+                <label  class="etiqueta" for="telefono">Número telefónico</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="coordenadas" type="text" placeholder="-34.595986,-58.3724715">
+                <label  class="etiqueta" for="coordenadas">Coordenadas X e Y</label>
+              </div>
+              <div class="input-field col s12">
+                <select id="categoria">
+                  <option value="" disabled selected>Seleccionar</option>
+                  <option value="C">Comercial</option>
+                  <option value="R">Residencial</option>
+                  <option value="M">Mixta</option>
+                </select>
+                <label class="etiqueta" >Categoría</label>  
+              </div>
+              <div class="center-align">
+                <button class="btn waves-effect waves-light lime darken-3" id="envioDatos"> Agregar</button>
+              </div> 
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col s6">
+      <div id="mapa"></div>
+    </div>  
+  </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/demoMap.js"></script>
+  </body>  
+</html>
